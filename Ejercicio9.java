@@ -18,7 +18,24 @@ public class Ejercicio9 {
 		//Definimos la clase datos.
 		Scanner datos = new Scanner(System.in);
 		
-		 
+		int [] n = new int [8];
+		
+		System.out.println("Por favor introduzca 8 números: ");
+		
+		for (int i = 0; i < 8; i++) {
+			n[i] = datos.nextInt();
+		}
+		
+		System.out.println();
+		
+		for (int i = 0; i < 8; i++) {
+			if (n[i] % 2 == 0) {
+				System.out.println(n[i] + " Par");
+			} else {
+				System.out.println(n[i] + " Impar");
+			}
+		}
+		
 		
 	}
 }
