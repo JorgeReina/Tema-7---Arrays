@@ -28,13 +28,28 @@ public class Ejercicio10 {
 			aleatorio[i] = (int)(Math.random() * 101);
 		}
 		
+		int contador = 0;
+		int contador1 = 0;
+		
 		for (int i = 0; i < 20; i++) {
 			if (aleatorio[i] %2 ==0)
 			{
-				int contador = 0;
 				par[contador] = aleatorio[i];
-				contador += 1;
+				contador += 1 ;
+			} else
+			{
+				impar[contador1] = aleatorio[i];
+				contador1 += 1 ;
 			}
+		}
+		
+		for (int i = 0; i < 20; i++) {
+			System.out.println(par[i] + " " + impar[i]);
+		}
+		
+		for (int i = 0; i < 20; i++)
+		{
+			
 		}
 		
 		
