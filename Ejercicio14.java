@@ -24,6 +24,7 @@ public class Ejercicio14 {
 		String [] palabras = new String [8];
 		String [] colores = {"verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro", "blanco", "morado"};
 		String [] otros = new String [8];
+		String [] nocolores = new String [8];
 		
 		int contador = 0;
 		int contador1 = 0;
@@ -42,20 +43,25 @@ public class Ejercicio14 {
 		
 		for (int i = 0; i < 8; i++) {
 			for (int u = 0; u < 8; u++) {
-				if (palabras[contador] == colores[i])
+				if (palabras[i].equals(colores[u]))
 				{
-					otros[contador1] = palabras[contador];
+					otros[contador1] = palabras[i];
+					contador1 += 1;
 				}
+				/*else
+				{
+					nocolores[contador] = palabras[i];
+					contador += 1;
+				}**/
 			}
-			contador += 1;
-			contador1 += 1;
 		}
 		
 		System.out.println();
 		
 		for (int i = 0; i < 8; i++)
 		{
-			System.out. print(otros[i]);
+			System.out. print(otros[i] + " ");
+			//System.out. print(nocolores[i] + " ");
 		}
 		
 		
