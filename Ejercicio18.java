@@ -24,6 +24,7 @@ public class Ejercicio18 {
 		int [] n = new int [10];
 		int [] mayor = new int[10];
 		int [] menor = new int[10];
+		int [] suma = new int[10];
 		
 		int	contador = 0;
 		int contador1 = 0;
@@ -68,15 +69,25 @@ public class Ejercicio18 {
 			System.out.print(menor[i] + " ");
 		}
 		
+		for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < contador; i++)
+			{
+				
+			}
+			
+		}
 		
-		for (int i = 0; i < 10; i+2) {
+		
+		
+		
+		/**for (int i = 0; i < 10; i+2) {
 				n[i] = minimo[contador2];
 				contador2 += 1;
 		}
 		for (int i = 1; i < 10; i+2) {
 				n[i] = maximo[contador3];
 				contador3 += 1;
-		}
+		}**/
 		
 		
 	}
